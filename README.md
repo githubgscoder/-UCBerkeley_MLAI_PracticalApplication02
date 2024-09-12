@@ -49,16 +49,34 @@ Linear Regression
 Model Evaluation:
 
 Ridge Vs. Linear Vs. Lasso
-  -- ![image](https://github.com/user-attachments/assets/bd81b7c4-c655-45a7-a719-3a0c5f36409c)
+  ![image](https://github.com/user-attachments/assets/bd81b7c4-c655-45a7-a719-3a0c5f36409c)
 
+Lasso Regression Feature Importance
+  ![image](https://github.com/user-attachments/assets/6e7ef95b-9553-452b-979c-ce98caac14ff)
+
+Ridge Regression Feature Importance
+  ![image](https://github.com/user-attachments/assets/c86b0114-5ff3-4114-8793-f9ae398c4fa2)
+
+Linear Regression Feature Importance
+  ![image](https://github.com/user-attachments/assets/85bbccce-3844-4bdb-af36-600b93dc7a1b)
 
 
 
 Key Findings
-Significant Factors: [Highlight the most influential features identified by the models, e.g., mileage, year, make, model, condition]
-Price Prediction: [Discuss the model's ability to accurately predict prices based on the identified factors]
-Inventory Optimization: [Provide recommendations for optimizing inventory based on the findings, such as focusing on specific car models, mileage ranges, or price points]
+Significant Factors: Three of the models mentioned that odometer readings were a key factor in predicting price, followed by type of the vehicle. The Linear and Lasso regression model transmission and title_status that played additional roles, whereas for the model that included the manufacturer and model into the training data, showcased manufacturer, model, odometer and age and price predictors.
+
 Conclusion
-Summary of Key Findings: Recap the main conclusions drawn from the analysis.
-Recommendations: Offer actionable recommendations for used car dealers to improve their inventory management and pricing strategies.
-[Include relevant visualizations, such as feature importance plots, scatter plots, and prediction accuracy graphs, to support your findings]
+Summary of Key Findings: In the state of California, purchase of inventory on ceratain types of vehicle like the sedans and SUVs had a lot of demand and as expected lower the odometer readings the car pricings where higher.
+![image](https://github.com/user-attachments/assets/3855b01d-6f77-4a97-9585-a1a6b3951d96)
+
+![image](https://github.com/user-attachments/assets/d094979d-6679-4d23-ae6f-14a3c698cf6b)
+
+![image](https://github.com/user-attachments/assets/59fd3745-3442-42ca-b96e-d95ea0d527fc)
+
+![image](https://github.com/user-attachments/assets/d1e27ad1-1656-48af-bb62-5ef22234b5b6)
+
+
+Next Steps: It would be good to look at it state by state to see if the features change or if they are all the same. We could also look at top sellig manufacturers and models to look at the features that consumers are searching for in a vehicle.
+
+
+
