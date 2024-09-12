@@ -50,6 +50,7 @@ Linear Regression
 Model Evaluation:
 
 Ridge Vs. Linear Vs. Lasso
+
   ![image](https://github.com/user-attachments/assets/bd81b7c4-c655-45a7-a719-3a0c5f36409c)
 
 Lasso Regression Feature Importance
