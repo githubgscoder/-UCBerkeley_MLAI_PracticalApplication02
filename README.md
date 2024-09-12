@@ -25,8 +25,35 @@ Model Selection:
 1. Looked at 3 models built using Ridge, Lasso and Linear Regression
 2. Applied KFold and GridSearchCV to find the best parameters with the Ridge and Lasso model
 
-Model Training: [Describe the training process, including hyperparameter tuning and evaluation metrics]
-Model Evaluation: [Present the evaluation results, such as accuracy, precision, recall, F1-score, and other relevant metrics]
+Model Training:
+Two different approaches were taken, one was to train a model with the manufacturer and model and the second to remove them and then train the model. A pre-processor was created to transform the columns based on categorical and numerical data types, OneHotEncoder was used for categorical columns and StandardScaler for numerical columns.
+
+Ridge model
+1. Created a pipeline to use the preprocessor and ridge regressions for various alphas 0.1, 1, 10, 100
+2. Found the best alpha and reran the model
+3. Created another model using KFold and GridSearchCV using neg_mean_squared_error for scoring to find the MSE.
+
+Lasso Model
+1. Created a pipeline to use a preprocessor on the categorical and numerical columns but also applied PolynomialFeatures to a degree of 2 on the numerical columns, created an alternative with a passthrough as well.
+2. Used SequentialFeatureSelector using linear regresson to select 5 features
+3. Applied lasso regression
+4. Created another model using KFold cross validation and GridSearchCV Hyperparameter tuning
+
+Linear Regression
+1. Created a pipeline to use a preprocessor on the categorical and numerical columns but also applied PolynomialFeatures to a degree of 2 on the numerical columns, created an alternative with a passthrough as well.
+2. Used SequentialFeatureSelector using linear regresson to select 5 features
+3. Applied linear regression
+4. Left this model at Hold out cross validation
+
+
+Model Evaluation:
+
+Ridge Vs. Linear Vs. Lasso
+  -- ![image](https://github.com/user-attachments/assets/bd81b7c4-c655-45a7-a719-3a0c5f36409c)
+
+
+
+
 Key Findings
 Significant Factors: [Highlight the most influential features identified by the models, e.g., mileage, year, make, model, condition]
 Price Prediction: [Discuss the model's ability to accurately predict prices based on the identified factors]
