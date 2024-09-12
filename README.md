@@ -8,14 +8,14 @@ Data Analysis
 Data Sources: https://mo-pcco.s3.us-east-1.amazonaws.com/BH-PCMLAI/module_11/practical_application_II_starter.zip
 
 Data Cleaning and Preparation: 
-    1. Dropped all rows of data where manufacturer and model did not have any data
-    2. Dropped id and VIN as it wasn't required to train the model.
-    3. Filled the value 'unknown' for the following columns - cylinders, fuel, title status, transmission, drive, size, type and paint color
-    4. Dropped additional rows that had no values in year and odometer
-    5. Filtered down the dataset to only include data with vehicles that had less than 999,999 on their odometer
-    6. Included only vehicles with a price greater than $999
-    7. Since there is a possibility of price variation across regions and states, filtered down the data to just the state of CA with regions having greater than 1500 datapoints
-    8. Converted all manufacturer and model to lower case
+1. Dropped all rows of data where manufacturer and model did not have any data
+2. Dropped id and VIN as it wasn't required to train the model.
+3. Filled the value 'unknown' for the following columns - cylinders, fuel, title status, transmission, drive, size, type and paint color
+4. Dropped additional rows that had no values in year and odometer
+5. Filtered down the dataset to only include data with vehicles that had less than 999,999 on their odometer
+6. Included only vehicles with a price greater than $999
+7. Since there is a possibility of price variation across regions and states, filtered down the data to just the state of CA with regions having greater than 1500 datapoints
+8. Converted all manufacturer and model to lower case
 
 Feature Engineering:
 1. Added price ratio as a ratio of price and odometer
