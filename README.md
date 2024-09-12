@@ -6,6 +6,7 @@ This report presents the findings of a data analysis project aimed at optimizing
 
 Data Analysis
 Data Sources: https://mo-pcco.s3.us-east-1.amazonaws.com/BH-PCMLAI/module_11/practical_application_II_starter.zip
+GitHub Repository Link: https://github.com/githubgscoder/UCBerkeley_MLAI_PracticalApplication02.git
 
 Data Cleaning and Preparation: 
 1. Dropped all rows of data where manufacturer and model did not have any data
