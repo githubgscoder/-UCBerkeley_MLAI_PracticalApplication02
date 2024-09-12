@@ -1,4 +1,4 @@
-# -UCBerkeley_MLAI_PracticalApplication02
+# UCBerkeley_MLAI_PracticalApplication02
 
 Report: Optimizing Used Car Inventory
 Introduction
